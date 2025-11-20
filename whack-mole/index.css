@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url("./images/background.png");
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.score-container {
+  position: absolute;
+  left: 350px;
+  top: 100px;
+}
+
+.score-text {
+  font-size: 30px;
+}
+
+#game-container {
+  display: flex;
+  width: 650px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hole {
+  background-image: url("./images/hole.png");
+  width: 200px;
+  height: 108px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.mole {
+  background-image: url("./images/mole.png");
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
+}

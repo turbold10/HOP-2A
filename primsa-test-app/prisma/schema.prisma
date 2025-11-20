@@ -1,0 +1,31 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Class {
+  id          String    @id @default(nanoid())
+  name        String
+  teacherName String
+  createdAt   DateTime  @default(now())
+  student     Student[]
+}
+
+model Student {
+  id          String  @id @default(nanoid())
+  name        String
+  studentCode String  @unique
+  classId     String?
+  class       Class?  @relation(fields: [classId], references: [id])
+}

@@ -1,0 +1,40 @@
+### GET ALL DATA
+GET http://localhost:3000/api/users HTTP/1.1
+content-type: application/json
+
+### CREATE NEW DATA
+
+POST http://localhost:3000/api/users HTTP/1.1
+content-type: application/json
+
+{
+  "firstname": "Aurora",
+  "lastname": "Lighten",
+  "email": "alighten0@go.com",
+  "imageUrl": "http://dummyimage.com/117x116.png/cc0000/ffffff"
+}
+
+
+### GET SINGLE DATA
+
+GET http://localhost:3000/api/users/${ID} HTTP/1.1
+content-type: application/json
+
+
+### UPDATE SINGLE DATA
+
+PUT http://localhost:3000/api/users/${ID} HTTP/1.1
+content-type: application/json
+
+{
+  "firstname": "Boldoo",
+  "lastname": "Gotov",
+  "email": "alightenc0@go.com",
+  "imageUrl": "http://dummyimage.com/117x116.png/cc0000/ffffff"
+}
+
+
+### DELETE SINGLE DATA
+
+DELETE http://localhost:3000/api/users/${ID} HTTP/1.1
+content-type: application/json

@@ -1,0 +1,250 @@
+[
+  {
+    "_id": "66b43bfe65b3acd849eeaec3",
+    "studentCode": "PineconeClass",
+    "azureEmail": "elbeg+clerk_test@nestsolutions.llc",
+    "authUserId": "PdlmK-5yND9DGmZwOdBH7",
+    "private_metadata": {
+      "firstName": "Ерөнхий Нэр",
+      "lastName": "Ерөнхийөдөр",
+      "activeStatus": "ACTIVE",
+      "class": {
+        "_id": {
+          "$oid": "66150b5b555b988e7685fdc5"
+        },
+        "classNumber": "303",
+        "className": "test",
+        "teacherNames": ["Золбоо", "Билгүүн"],
+        "course": "DESIGN",
+        "classStartDate": {
+          "$date": "2024-05-27T00:00:00.000Z"
+        },
+        "teachers": [
+          {
+            "name": "Золбоо Октябрь",
+            "email": "Zolboo.O@nest.edu.mn",
+            "_id": {
+              "$oid": "66dfedd24cf67b64a43fcb85"
+            }
+          },
+          {
+            "name": "Билгүүн",
+            "email": "bilguun.t@nest.edu.mn",
+            "_id": {
+              "$oid": "671749262607c1f793e89147"
+            }
+          }
+        ]
+      },
+      "updatedAt": {
+        "$date": "2024-08-08T03:31:10.104Z"
+      },
+      "createdAt": {
+        "$date": "2024-08-08T03:31:10.104Z"
+      },
+      "__v": 2,
+      "dateOfBirth": {
+        "$date": "2014-12-01T16:00:00.000Z"
+      },
+      "personalEmail": "elbeg@nestsolutions.llc",
+      "emergencyContact": {
+        "primaryRelative": "Эмээ, өвөө",
+        "primaryName": "Нэр",
+        "primaryPhoneNumber": "99000000",
+        "secondaryRelative": "Хамаатан садан",
+        "secondaryName": "Нэр",
+        "secondaryPhoneNumber": "90000000"
+      },
+      "hoodieSize": "M",
+      "profilePicture": {
+        "path": "https://pinebaatars-testing.s3.us-west-2.amazonaws.com/screenshot-2024-11-28-at-121630-FZLNnM.png",
+        "width": 510,
+        "height": 182
+      },
+      "isGraduated": false,
+      "gender": "MALE",
+      "marriageStatus": "SINGLE",
+      "socialLinks": {
+        "linkedInLink": "https://www.google.com",
+        "instagramUsername": "turuuu"
+      },
+      "phoneNumber": "99184723",
+      "workPreference": {
+        "preferredJobType": "FULL_TIME",
+        "availabilityWorkHour": 40,
+        "availabilityStartToWork": "IMMEDIATE",
+        "_id": {
+          "$oid": "670e0911ba85fa2281295a69"
+        }
+      },
+      "salaryExpectation": {
+        "salaryType": "MONTHLY",
+        "expectedSalary": 5000000,
+        "_id": {
+          "$oid": "670e091cba85fa2281295a7a"
+        }
+      },
+      "cvResume": "https://pinebaatars-testing.s3.us-west-2.amazonaws.com/cv-resumes/location-AGn0N2.pdf",
+      "fiveYearAdvancePlan": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "introductionVideo": "https://pub-54904ef3b9374b6c9f80cf1763a31f5b.r2.dev/introduction-video/screen-recording-2024-10-09-at-190252-UHOBCe.mp4",
+      "techStacks": [
+        {
+          "techStack": "React.JS",
+          "yearsOfExperience": 5,
+          "isInterested": false
+        },
+        {
+          "techStack": "React.JS",
+          "yearsOfExperience": 5,
+          "isInterested": false
+        },
+        {
+          "techStack": "React.JS",
+          "yearsOfExperience": 5,
+          "isInterested": false
+        },
+        {
+          "techStack": "React.JS",
+          "yearsOfExperience": 5,
+          "isInterested": false
+        },
+        {
+          "techStack": "React.JS",
+          "yearsOfExperience": 5,
+          "isInterested": false
+        },
+        {
+          "techStack": "React.JS",
+          "yearsOfExperience": 5,
+          "isInterested": false
+        },
+        {
+          "techStack": "React.JS",
+          "yearsOfExperience": 5,
+          "isInterested": false
+        },
+        {
+          "techStack": "React.JS",
+          "yearsOfExperience": 5,
+          "isInterested": false
+        },
+        {
+          "techStack": "React.JS",
+          "yearsOfExperience": 5,
+          "isInterested": false
+        },
+        {
+          "techStack": "React.JS",
+          "yearsOfExperience": 5,
+          "isInterested": false
+        },
+        {
+          "techStack": "React.JS",
+          "yearsOfExperience": 5,
+          "isInterested": false
+        },
+        {
+          "techStack": "React.JS",
+          "yearsOfExperience": 5,
+          "isInterested": false
+        }
+      ],
+      "workExperiences": [
+        {
+          "company": "Unitel",
+          "endDate": {
+            "$date": "2022-10-31T16:00:00.000Z"
+          },
+          "startDate": {
+            "$date": "2019-12-31T16:00:00.000Z"
+          },
+          "position": "Software engineer",
+          "_id": {
+            "$oid": "670e09b9ba85fa2281295f10"
+          }
+        },
+        {
+          "company": "Pinecone",
+          "endDate": null,
+          "startDate": {
+            "$date": "2024-03-31T16:00:00.000Z"
+          },
+          "position": "Senior software engineer",
+          "_id": {
+            "$oid": "670f60da6fab913583bff936"
+          }
+        },
+        {
+          "company": "PINECONE academy",
+          "endDate": null,
+          "startDate": {
+            "$date": "2022-05-31T16:00:00.000Z"
+          },
+          "position": "Software engineer",
+          "_id": {
+            "$oid": "674d7eab191bae3587865701"
+          }
+        }
+      ],
+      "education": [
+        {
+          "educationDegree": "Pinecone certificate",
+          "occupation": "Software engineer",
+          "enrolledDate": {
+            "$date": "2022-01-01T00:00:00.000Z"
+          },
+          "graduatedDate": {
+            "$date": "2022-10-01T00:00:00.000Z"
+          },
+          "university": "pinecone academys",
+          "_id": {
+            "$oid": "671b51e5d12bc93cbb2e41d1"
+          }
+        },
+        {
+          "educationDegree": "Pinecone certificate",
+          "occupation": "Software engineer",
+          "enrolledDate": {
+            "$date": "2022-12-01T00:00:00.000Z"
+          },
+          "graduatedDate": {
+            "$date": "2023-06-01T00:00:00.000Z"
+          },
+          "university": "pinecone academy",
+          "_id": {
+            "$oid": "671b52374e032c574d1d168f"
+          }
+        },
+        {
+          "educationDegree": "ee234234234234",
+          "occupation": "d234234234234",
+          "enrolledDate": {
+            "$date": "2019-11-01T00:00:00.000Z"
+          },
+          "graduatedDate": {
+            "$date": "2004-01-01T00:00:00.000Z"
+          },
+          "university": "ee234234234234",
+          "_id": {
+            "$oid": "67282b8a09333e0dc3057284"
+          }
+        },
+        {
+          "educationDegree": "test",
+          "occupation": "tes",
+          "enrolledDate": {
+            "$date": "2019-02-01T00:00:00.000Z"
+          },
+          "graduatedDate": null,
+          "university": "test",
+          "_id": {
+            "$oid": "672836983eba83f9219d36a4"
+          }
+        }
+      ],
+      "isAdvocator": true,
+      "isProfileVisible": true,
+      "leetcodeUsername": "tsatsa"
+    }
+  }
+]

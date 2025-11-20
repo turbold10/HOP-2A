@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fruit Basket</title>
+  </head>
+  <body>
+    <h2>Fruit Basket</h2>
+    <input type="text" id="fruitInput" placeholder="Enter a fruit..." />
+    <button onclick="addFruit()">Add Fruit</button>
+    <p>Different fruits: <span id="fruitCount">0</span></p>
+    <p>Total number of fruits: <span id="totalFruits">0</span></p>
+    <div id="fruitList"></div>
+
+    <script>
+      let fruitId = 0;
+
+      function updateCounters() {
+        const count = document.getElementById("fruitList").children.length;
+        document.getElementById("fruitCount").textContent = count;
+        let total = 0;
+        for (let i = 1; i <= fruitId; i++) {
+          const span = document.getElementById("fruitCount-" + i);
+          if (span) total += parseInt(span.textContent);
+        }
+        document.getElementById("totalFruits").textContent = total;
+      }
+
+      function addFruit() {
+        const input = document.getElementById("fruitInput");
+        const fruit = input.value.trim();
+        if (fruit === "") return;
+
+        fruitId++;
+        const currentId = fruitId;
+
+        const fruitDiv = document.createElement("div");
+        fruitDiv.id = "fruitDiv-" + currentId;
+
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = fruit + " ";
+
+        const countSpan = document.createElement("span");
+        countSpan.id = "fruitCount-" + currentId;
+        countSpan.textContent = "1";
+
+        const labelSpan = document.createElement("span");
+        labelSpan.textContent = " (Count: ";
+
+        const closeLabelSpan = document.createElement("span");
+        closeLabelSpan.textContent = ") ";
+
+        const increaseBtn = document.createElement("button");
+        increaseBtn.textContent = "Increase";
+        increaseBtn.onclick = function () {
+          let count = parseInt(
+            document.getElementById("fruitCount-" + currentId).textContent
+          );
+          document.getElementById("fruitCount-" + currentId).textContent =
+            count = count + 1;
+          updateCounters();
+        };
+
+        const removeBtn = document.createElement("button");
+        removeBtn.textContent = "Remove";
+        removeBtn.onclick = function () {
+          document.getElementById("fruitDiv-" + currentId).remove();
+          updateCounters();
+        };
+
+        fruitDiv.appendChild(nameSpan);
+        fruitDiv.appendChild(labelSpan);
+        fruitDiv.appendChild(countSpan);
+        fruitDiv.appendChild(closeLabelSpan);
+        fruitDiv.appendChild(increaseBtn);
+        fruitDiv.appendChild(removeBtn);
+
+        document.getElementById("fruitList").appendChild(fruitDiv);
+
+        input.value = "";
+        updateCounters();
+      }
+    </script>
+  </body>
+</html>

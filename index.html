@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Number Tracker</title>
+  </head>
+  <body>
+    <input type="number" id="userInput" placeholder="Enter a number" />
+    <button onclick="addNumber()">Add Number</button>
+    <div id="output"></div>
+
+    <script>
+      const numbers = [];
+
+      function addNumber() {
+        const input = document.getElementById("userInput");
+        const num = Number(input.value);
+        if (input.value.trim() !== "") {
+          numbers.push(num);
+          numbers.sort(function (a, b) {
+            a - b;
+          });
+          // (a, b) => a - b;
+          document.getElementById("output").innerText = numbers.join(", ");
+          input.value = "";
+        }
+      }
+    </script>
+  </body>
+</html>

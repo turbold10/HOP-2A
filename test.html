@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Array Search Filter with Divs (No "this", No "includes")</title>
+    <style>
+      .item {
+        margin: 5px 0;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="searchBox" placeholder="Search items..." />
+    <div id="itemList"></div>
+
+    <script>
+      const items = ["Apple", "Banana", "Cherry", "Date", "Fig", "Grape"];
+      const itemList = document.getElementById("itemList");
+      const searchBox = document.getElementById("searchBox");
+
+      function displayItems(filteredItems) {
+        itemList.innerHTML = "";
+        for (let i = 0; i < filteredItems.length; i++) {
+          const div = document.createElement("div");
+          div.className = "item";
+          div.textContent = filteredItems[i];
+          itemList.appendChild(div);
+        }
+      }
+
+      displayItems(items);
+
+      searchBox.addEventListener("input", function (event) {
+        const query = event.target.value.toLowerCase();
+        const filtered = [];
+        for (let i = 0; i < items.length; i++) {
+          if (items[i].toLowerCase().indexOf(query) !== -1) {
+            filtered.push(items[i]);
+          }
+        }
+        displayItems(filtered);
+      });
+    </script>
+  </body>
+</html>
