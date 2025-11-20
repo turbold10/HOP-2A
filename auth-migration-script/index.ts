@@ -47,7 +47,7 @@
 import { Clerk } from "@clerk/clerk-sdk-node";
 // import clerkClient from "@clerk/clerk-sdk-node";
 
-const clerk = Clerk({ secretKey: "sk_live_kgRFzoCEm6tifiAxuDubuni1qevCjCAdV5nh1QpPN5" });
+const clerk = Clerk({ secretKey: "secret" });
 
 async function addExternalIdToUser(userId, externalId) {
   try {
